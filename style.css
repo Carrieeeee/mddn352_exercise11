@@ -1,0 +1,67 @@
+/*
+There are two sections in this CSS. First sets up the default style, and the second creates an alternative style for when width is less than 480px.
+*/
+
+
+body {
+    background-color: lightyellow;
+    color: #000;
+    padding: 20px;
+    font-family:fantasy;
+    border: 1px inset #DDD
+}
+
+
+ul {
+    padding: 5px;
+    margin:center;
+}
+
+nav ul li {
+    display: inline;
+    
+  
+    padding-top: 10px;
+}
+
+a {
+    display; inline;
+    background-color: #FEB0B0;
+    padding: 2px;
+    color: #FFF;
+    font-family:fantasy;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+    transform: rotate(90deg);
+	background-color: tomato;
+    font-family:fantasy;
+	color: #FFF;
+    }
+    
+    nav ul li {
+    text-align: center;
+	display: block;
+	margin: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    body {
+    transform:rotate(0);
+	background-color: dodgerblue;
+    font-family:fantasy;
+	color: #FFF;
+    }
+    
+    nav ul li {
+    text-align: justify;
+	display: block;
+	margin:center;
+    }
+}
+
+/*Try multiple width breaks for different devices */
